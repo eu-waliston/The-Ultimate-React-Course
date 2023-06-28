@@ -1,0 +1,13 @@
+.pizza__container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img__pizza {
+    width: 200px;
+    height: 150px;
+}
