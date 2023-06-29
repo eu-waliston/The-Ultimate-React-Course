@@ -1,16 +1,15 @@
 import React from "react";
-import Pizza from "./components/Pizza/Pizza";
 
-const App = (props) => {
+import Pizza from "./components/Pizza/Pizza";
+import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
+
+const App = () => {
   return (
     <div className="container">
-      <Pizza 
-        title={props.title}
-        ingredients={props.ingredients}
-        price={props.price}
-        photoName={props.photoName}
-        soldOut={props.soldOut}    
-      />
+      <Nav />
+      <Pizza />
+      <Footer />
     </div>
   );
 };
