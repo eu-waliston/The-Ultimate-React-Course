@@ -15,10 +15,12 @@ const Footer = () => {
         </div>
       );
     } else {
+      // < Order openHour={openHour}/>
       return (
         <div className="order">
           <p>
-            We're open until {closeHour}:00, Come visit us or ordern Online.
+            We're open until {closeHour}:00, Come visit us or ordern
+            Online.
           </p>
           <button className="btn">Order</button>
         </div>
@@ -54,5 +56,14 @@ const Footer = () => {
     </div>
   );
 };
+
+// function Order(props) {
+//   return (
+//     <div className="order">
+//       <p>We're open until {props.closeHour}:00, Come visit us or ordern Online.</p>
+//       <button className="btn">Order</button>
+//     </div>
+//   );
+// }
 
 export default Footer;
