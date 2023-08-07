@@ -1,0 +1,36 @@
+.Card {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 10%;
+
+  background-color: rgb(36, 35, 37);
+  padding: 20px;
+  border-radius: 30px;
+
+  color: #fff;
+
+  .profile-picture {
+    border-radius: 100%;
+  }
+  .title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .stack {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+  }
+  .stacks {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+  }
+}
