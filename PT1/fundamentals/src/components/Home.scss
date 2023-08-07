@@ -1,0 +1,98 @@
+@import "../utilities/Master.scss";
+
+//=========NAVBAR COMPONENT============
+.nav__component {
+  width: 100%;
+  height: 130px;
+  text-align: center;
+
+  h1 {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ec5d09;
+    font-size: 3rem;
+  }
+  h2 {
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+  .span {
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    left: calc(45%);
+    background-color: #161616;
+    text-align: center;
+  }
+}
+
+//========= PIZZA COMPONENT ========
+
+.pizza__container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+
+  .img__pizza {
+    width: 300px;
+    height: 200px;
+  }
+
+  .pizzas_container {
+    margin-top: 20px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+// ========= FOOOTER COMPONENT ===========
+.footer__component {
+  clear: both;
+  text-align: center;
+  margin-top: 10%;
+
+  .order {
+    p {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      color: rgb(236, 71, 11);
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .btn {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border: none;
+      border-radius: 10px;
+      background-color: rgb(236, 71, 11);
+      width: 100px;
+      height: 40px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bolder;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .footer--bottom {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(236, 71, 11);
+  }
+}
