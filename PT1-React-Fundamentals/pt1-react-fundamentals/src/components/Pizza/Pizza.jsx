@@ -34,6 +34,8 @@ const Pizza = (props) => {
   ];
   const pizzas = true;
 
+  // if(props.pizzaData.soldOut) return null;
+
   return (
     <div className="pizza__container">
             {
