@@ -19,11 +19,11 @@ const Card = (props) => {
       <p className="about">{props.about}</p>
       <h4 className="stack">Stacks: </h4>
       <div className="stacks">
-        <AiFillHtml5 />
-        <BiLogoCss3/>
-        <BiLogoJavascript/>
-        <BiLogoNodejs/>
-        <BiLogoMongodb/>
+        < AiFillHtml5 className="prog"   />
+        < BiLogoCss3 className="prog"  />
+        < BiLogoJavascript className="prog"  />
+        < BiLogoNodejs className="prog"  />
+        < BiLogoMongodb className="prog"  />
       </div>
     </div>
   );
