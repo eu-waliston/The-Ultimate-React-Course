@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pizza.css"
+import "./Pizza.css";
 
 const Pizza = (props) => {
   const pizzaData = [
@@ -32,20 +32,25 @@ const Pizza = (props) => {
       soldOut: false,
     },
   ];
+  const pizzas = true;
 
   return (
     <div className="pizza__container">
-      {
-        pizzaData.map((pizza) => (
-          <div className="pizzas_container">
-            <img src={pizza.photoName} alt="pizza" className="img__pizza"/>
-            <div>
-              <h1>{pizza.name}</h1>
-              <p>{pizza.ingredients}</p>
-            </div>
-          </div>
-        ))
-      }
+            {
+              pizzas ? pizzaData.map((pizza) => (
+                <div className="pizzas_container">
+                  <img src={pizza.photoName} alt="pizza" className="img__pizza" />
+                  <div>
+                    <h1>{pizza.name}</h1>
+                    <p>{pizza.ingredients}</p>
+                  </div>
+                </div>
+              ))
+              :
+              (
+                <h1>As Pizzas acabaram!</h1>
+              )
+            }
     </div>
   );
 };
