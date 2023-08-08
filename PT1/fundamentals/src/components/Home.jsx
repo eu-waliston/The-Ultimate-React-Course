@@ -9,6 +9,10 @@ const Navbar = () => {
       <hr className="span" />
       <h2>our menu</h2>
       <hr className="span" />
+      <p>
+        Authentic Italian cuisine. 6 create dishes to choose from. All from ourt
+        stone oven, all organic, all delicious
+      </p>
     </div>
   );
 };
@@ -21,11 +25,15 @@ const Pizza = () => {
     <div className="pizza__container">
       {pizzas ? (
         pizzaObj.map((pizza) => (
-          <div className="pizzas_container">
+          <div
+            className={`pizzas_container ${pizza.soldOut ? "sold-out" : ""}`}
+          >
             <img src={pizza.photoName} alt="pizza" className="img__pizza" />
             <div>
               <h1>{pizza.name}</h1>
               <p>{pizza.ingredients}</p>
+
+              {pizza.soldOut ? <p>SOLD OUT!</p> : <p> $ {pizza.price}</p>}
             </div>
           </div>
         ))

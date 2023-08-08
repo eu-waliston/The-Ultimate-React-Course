@@ -25,6 +25,6 @@ export const pizzaObj = [
     ingredients: "Tomato, mozarella, ham, aragula, and burrata cheese",
     price: 10,
     photoName: "pizzas/proscuitto.jpg",
-    soldOut: false,
+    soldOut: true,
   },
 ];

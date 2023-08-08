@@ -24,6 +24,7 @@ const Card = (props) => {
         < BiLogoJavascript className="prog"  />
         < BiLogoNodejs className="prog"  />
         < BiLogoMongodb className="prog"  />
+        <BsGit className="prog"/>
       </div>
     </div>
   );

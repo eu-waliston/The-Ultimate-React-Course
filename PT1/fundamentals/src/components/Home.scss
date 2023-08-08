@@ -17,6 +17,11 @@
     margin-top: 5px;
   }
 
+  p {
+    margin-top: 30px;
+    color: rgb(236, 71, 11);
+  }
+
   .span {
     width: 10%;
     height: 5px;
@@ -54,6 +59,10 @@
     p {
       font-size: 1rem;
     }
+  }
+
+  .sold-out {
+    filter: grayscale(1);
   }
 }
 
