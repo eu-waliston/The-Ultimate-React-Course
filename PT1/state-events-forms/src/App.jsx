@@ -13,19 +13,19 @@ export default function App() {
 
   function handlePrevius() {
     if (step > 1) {
-      setStep(step - 1);
+      setStep((s) => s - 1);
     }
   }
 
   function handleNext() {
     if (step < 3) {
-      setStep(step + 1);
+      setStep((s) => s + 1);
     }
   }
 
   return (
     <div>
-      <button className="close" onClick={() => setisOpen(!isOpen)}>
+      <button className="close" onClick={() => setisOpen((is) => !is)}>
         &times;
       </button>
 
