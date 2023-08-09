@@ -1,0 +1,47 @@
+.date__component {
+  width: 70%;
+  height: 50vh;
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(165, 42, 42, 0.39);
+
+  .op {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+    top: 50px;
+    margin-bottom: 50px;
+    .icon {
+      margin-right: 10px;
+      margin-left: 10px;
+      background-color: #fff;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .counter {
+    display: flex;
+    justify-content: center;
+    .days {
+        margin-left: 10px;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 13%;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+}
