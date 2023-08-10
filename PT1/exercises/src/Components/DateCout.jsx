@@ -11,6 +11,18 @@ const DateCount = () => {
   let date = new Date("june 21 2027");
   date.setDate(date.getDate() + count);
 
+  const handleClickCountUp = () => {
+    if (step >= 0) {
+      setCount(count + step);
+    }
+  };
+
+  const handleClickCountDown = () => {
+    if (step >= 0) {
+      setCount(count - step);
+    }
+  };
+
   return (
     <div className="date__component">
       <div className="op">
@@ -22,15 +34,9 @@ const DateCount = () => {
         <AiOutlinePlus className="icon" onClick={() => setStep((s) => s + 1)} />
       </div>
       <div className="op">
-        <CgBorderStyleSolid
-          className="icon"
-          onClick={() => setCount((c) => c - step)}
-        />
+        <CgBorderStyleSolid className="icon" onClick={handleClickCountDown} />
         <h3>COUNT &nbsp; {count}</h3>
-        <AiOutlinePlus
-          className="icon"
-          onClick={() => setCount((c) => c + step)}
-        />
+        <AiOutlinePlus className="icon" onClick={handleClickCountUp} />
       </div>
       <br />
       <div className="counter">
