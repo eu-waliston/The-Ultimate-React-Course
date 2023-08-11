@@ -2,4 +2,5 @@
 
 
 ### Projects:
-  - Fast Pizza Menu: https://the-ultimate-react-course.vercel.app/
+  - :pizza: Fast Pizza Menu: https://the-ultimate-react-course.vercel.app/
+  - :beach_umbrella: Travel List: https://the-ultimate-react-course-cuwp.vercel.app/
