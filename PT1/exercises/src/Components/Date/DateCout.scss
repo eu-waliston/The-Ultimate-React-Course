@@ -1,3 +1,5 @@
+//date count I
+
 .date__component {
   width: 70%;
   height: 50vh;
@@ -5,7 +7,7 @@
   top: 20%;
   margin: 0 auto;
   border-radius: 10px;
-  background-color: rgba(165, 42, 42, 0.39);
+  background-color: rgb(42, 50, 83);
 
   .op {
     display: flex;
@@ -29,19 +31,38 @@
         opacity: 0.8;
       }
     }
+    h4 {
+      color: #fff;
+    }
   }
 
   .counter {
     display: flex;
     justify-content: center;
     .days {
-        margin-left: 10px;
+      margin-left: 10px;
     }
-    h2 {
+    h4 {
       text-align: center;
       margin-top: 13%;
-      font-size: 2rem;
+      font-size: 1rem;
       text-transform: uppercase;
     }
   }
+
+  .btn {
+    position: relative;
+    top: 80px;
+    margin-left: 40%;
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+  }
+
+  .counter {
+    h4 {
+      color: #fff;
+    }
+  }
 }
+

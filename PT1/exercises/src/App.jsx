@@ -1,19 +1,19 @@
 import React from "react";
 import "./App.scss";
-// import Card from "./Components/Card";
-import DateCount from "./Components/DateCout";
 
-const App = (props) => {
+// import FlashCard from "./Components/FlashCard/FlashCard";
+// import DateCount from "./Components/Date/DateCout";
+
+import DateCountII from "./Components/Date/DateCount-II";
+// import DateCount from "./Components/Date/DateCout";
+
+
+
+const App = () => {
   return (
     <div className="App">
-      {/* <Card 
-        imgURL="./images/download.jpeg"
-        name="Waliston Euripedes"
-        title="Web Developer "
-        about="A web developer is a programmer who develops World Wide Web applications using a client–server model. The applications typically use HTML, CSS, and JavaScript in the client, and any general-purpose programming language in the server. HTTP is used for communications between client and server."
-      /> */}
-
-      <DateCount />
+      < DateCountII/ >
+      {/* <DateCount /> */}
     </div>
   );
 };

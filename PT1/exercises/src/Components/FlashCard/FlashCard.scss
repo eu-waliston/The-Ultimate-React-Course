@@ -1,0 +1,39 @@
+.flash--cards {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  justify-content: center;
+  position: relative;
+  top: 10%;
+  gap: 100px;
+  text-align: center;
+
+  .question {
+    background-color: rgb(112, 201, 24);
+
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.11);
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+      transition: 0.5s;
+      background-color: rgb(99, 184, 14);
+    }
+  }
+
+  .asnwer {
+    background-color: rgb(2, 58, 23);
+
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.11);
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
