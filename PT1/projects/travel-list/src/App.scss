@@ -1,0 +1,30 @@
+@import "./utilities/Variables.scss";
+
+.home__component {
+  width: 100%;
+}
+
+//============= NAVBAR ===========
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background-color: $nav--color;
+  box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.26);
+  padding: 10px;
+  .logo-img {
+    width: 100px;
+  }
+
+  .fa {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: $fantasy--font;
+    color: $bg-color;
+  }
+}
+
+
+//=========Pachake list========
