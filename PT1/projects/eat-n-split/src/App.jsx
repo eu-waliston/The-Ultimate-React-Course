@@ -26,18 +26,23 @@ function Button({ children, onClick }) {
 }
 
 export default function App() {
+  const[friends, setFriends] = React.useState(initialFriends)
   const [showAddFriend, setshowAddFriend] = React.useState(false);
 
   function handleShoeAddFriend() {
     setshowAddFriend((show) => !show)
   }
 
+  function handleAddFriend(friend) {
+    setFriends((friends) => [...friends, friend])
+  }
+
   return (
     <div className="app">
       <div className="sidebar">
-        <FriendsLiat />
+        <FriendsList friends={friends}/>
         {
-          showAddFriend && <FormAddFriend />
+          showAddFriend && <FormAddFriend onAddFriend={handleAddFriend}/>
         }
         <Button onClick={handleShoeAddFriend}>
           {
@@ -49,9 +54,7 @@ export default function App() {
   )
 };
 
-function FriendsLiat() {
-  const friends = initialFriends;
-
+function FriendsList({friends}) {
   return <ul>
     {friends.map(friend => (
       <Friend friend={friend} key={friend.id} />
@@ -94,14 +97,37 @@ function Friend({ friend }) {
   )
 }
 
-function FormAddFriend() {
+function FormAddFriend({onAddFriend}) {
+  const [name, setName] = React.useState("");
+  const [image, setImage] = React.useState("https://i.pravatar.cc/48");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const id = crypto.randomUUID()
+
+    if(!name || !image) return;
+
+    const newFriend = {
+      id,
+      name, 
+      image: `${image}?=${id}`, 
+      balance: 0, 
+    }
+
+    onAddFriend(newFriend);
+
+    setName('')
+    setImage('https://i.pravatar.cc/48')
+  }
+
   return (
-    <form className="form-add-friend">
+    <form className="form-add-friend" onSubmit={handleSubmit}>
       <label>🧑‍🤝‍🧑 Friend name</label>
-      <input type="text" />
+      <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
 
       <label>📷 Image Url</label>
-      <input type="text" />
+      <input type="text" value={image} onChange={(e) => setImage(e.target.value)} />
+
 
       <Button>Add</Button>
     </form>
